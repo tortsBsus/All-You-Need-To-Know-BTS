@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+    <title>Registrations!</title>
+
+
+    <meta name="viewport" content="width=device-width, height=device-height, viewport-fit=cover, initial-scale=1" />
+    <link rel="icon" href="CSS/Pictures/favicon.png" type="image/gif">
+    <link rel="stylesheet" href="CSS/Registration.css" type="text/css">
+
+    <script type="text/javascript">
+        a = 0;
+        function toggle() {
+            a++;
+            var login = "";
+            if (a % 2 != 0) {
+                document.getElementById("section").innerHTML = `<div class="wrapper">            
+                                                                            <div class = "image" onclick="toggle()">
+                                                                                <B> Already a member?<BR> Welcome back! Click here to Login!</B>
+                                                                            </div>
+                                                                            <div class ="forms">
+                                                                            <form action="Register.php" method="post" onsubmit="return FormValidation()" name ="TheForm">
+                                                                                <Table>
+                                                                                    <TR><TH>First Name: </TH><TD><input type = "text" name = "FName" /><BR></TD></TR>
+                                                                                    <TR><TH>Last Name: </TH><TD><input type = "text" name = "LName" /><BR></TD></TR>
+                                                                                    <TR><TH>Year born: </TH><TD><input type = "text" name = "Year"/><BR></TD></TR>
+                                                                                    <TR><TH>Email ID: </TH><TD><input type = "email" name = "EmailID" /><BR></TD></TR>
+                                                                                        <TR><TH>Password: </TH><TD><input type = "password" name="Password" /><BR></TD></TR>
+                                                                                    <TR><TH><input type = "reset" name = "reset" /></TH><TD><input type = "submit" name = "Submit" /><BR></TD></TR>
+                                                                                </Table>
+                                                                            </form>
+                                                                            </div>`;
+            }
+            else {
+                document.getElementById("section").innerHTML = `<div class="wrapper">            
+                                                                    <div class = "image" onclick="toggle()">
+                                                                    <B> New here?<BR>Click here to Register!</B>
+                                                                </div>
+                                                            
+                                                                <div class ="forms">
+                                                                    <form action="login.php" method="post" onsubmit="return FormValidation()" name ="TheForm">
+                                                                        <Table>
+                                                                            <TR><TH>Email ID: </TH><TD><input type = "email" name = "EmailID" /><BR></TD></TR>
+                                                                                <TR><TH>Password: </TH><TD><input type = "password" name="Password" /><BR></TD></TR>
+                                                                            <TR><TD colspan = "2"><input type = "submit" name = "Submit" ></input></TD></TR>
+                                                                        </Table>
+                                                                    </form>               
+                                                                    <a href="Forgot password.html">Forgot Password?</a>
+                                                                </div>   
+                                                        </div>    `;
+
+            }
+        }
+
+        function FormValidation() 
+        {
+
+            //For Empty Fields
+            if (document.TheForm.EmailID.value == "") { alert("Email ID not entered!"); document.TheForm.EmailID.focus(); return false; }
+            if (document.TheForm.Password.value == "") { alert("Password not entered!"); document.TheForm.Password.focus(); return false; }
+            if (document.TheForm.FName.value == "") { alert("First Name not entered!"); document.TheForm.Fname.focus(); return false; }
+            if (document.TheForm.LName.value == "") { alert("Last Name not entered!"); document.TheForm.Lname.focus(); return false; }
+            if (document.TheForm.Year.value == "") { alert("Year Born not entered!"); document.TheForm.Year.focus(); return false; }
+                   
+        }
+    </script>
+</head>
+
+<body id="section">
+
+    <div class="wrapper">
+        <div class="image" onclick="toggle()">
+            <B> New here?<BR>Click here to Register!</B>
+        </div>
+
+        <div class="forms">
+            <form action="login.php" method="post" onsubmit="return FormValidation() " name="TheForm">
+                <Table>
+                    <TR>
+                        <TH>Email ID: </TH>
+                        <TD><input type="email" name="EmailID" /><BR></TD>
+                    </TR>
+                    <TR>
+                        <TH>Password: </TH>
+                        <TD><input type="password" name="Password" /><BR></TD>
+                    </TR>
+                    <TR>
+                        <TD colspan="2"><input type="submit" name="Submit"></input></TD>
+                    </TR>
+                </Table>
+            </form>
+            <a href="Forgot password.html">Forgot Password?</a>
+        </div>
+    </div>
+
+</body>
+
+</HTML>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="CSS/Pictures/favicon.png" type="image/gif">
+    <link rel="stylesheet" type="text/css" href="CSS/Quiz.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script type="text/javascript" src="Javascript/navigation-bar.js"></script>
+    <script>
+
+        var Choices = new Array(2);
+
+        function A(a, b) {
+            Choices[a] = b;
+            window.scrollBy(0, 725);
+
+        }
+        function result() {
+            switch (Choices[2]) {
+                case 2: document.getElementById("Result").innerHTML = "Here for the Music!"; break;
+                case 1: switch (Choices[1]) {
+                        case 1: document.getElementById("Result").innerHTML = "Deep Dive into BTS!"; break;
+                        case 2: document.getElementById("Result").innerHTML = "BTS in a Nutshell!"; break;
+                        case 3: document.getElementById("Result").innerHTML = "Deep Dive into BTS!"; break;
+                    }
+
+            }
+
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div id="Section">
+            <center>
+                Welcome to the world of BTS!
+                <BR>
+                Answer 3 simple questions and we will tell you where to start!
+                <BR>
+                <button type="button" class="btn btn-outline-light" onclick="A(0,0)">Let's Go!</button>
+            </center>
+        </div>
+    </div>
+
+    <div class="wrapper">
+
+        <div id="Section">
+            <div class="Question"> Do you know BTS?<BR><BR> </div>
+
+            <button type="button" class="btn btn-outline-light" onclick="A(1,1)">Yes</button>
+            <button type="button" class="btn btn-outline-light" onclick="A(1,2)">Somewhat</button>
+            <button type="button" class="btn btn-outline-light" onclick="A(1,3)">No</button>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div id="Section">
+            <div class="Question">Are you interested solely in their music or the other aspects of the group?</div>
+
+            <BR id="Q2">
+            <button type="button" class="btn btn-outline-light" onclick="A(2,2)">Music</button>
+            <button type="button" class="btn btn-outline-light" onclick="A(2,1)">BTS</button>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div id="Section">
+            <div class="Question">We recommend you start exploring from the <U><B id="Result" onmouseover="result()">
+                        Hover to Reveal!</B></U> page!<BR> Which one do you want to start with?
+            </div>
+            <BR>
+            <div class="row">
+                <div class="Options A" onclick="Redirects(1)">
+                    <H4> BTS in a Nutshell!</H4>
+
+                    You've heard people talk about this thing called a BTS on the news and social media but haven't
+                    understood exactly what it was. Go to our What is BTS? page where we take you through a quick tour
+                    of all the important things that you would need to know as a bystander!
+                </div>
+
+                <div class="Options A" onclick="Redirects(2)">
+                    <H4>A Deep dive into BTS!</H4>
+
+                    You know who they are but want to know all the fun little details and trivia related to them and
+                    their music! Explore our Deep Dive Section where we take you through a tour of their story along
+                    with other fun pages which will help you get started with your own research into them!
+                </div>
+
+                <div class="Options A" onclick="Redirects(3)">
+                    <H4> Here for the Music!</H4>
+
+                    For all the music buffs out there who don't care for all the glamour, our 'Here for the music!' page
+                    lets you view most of their discography with some personalized recommendations in a one stop
+                    location!
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
