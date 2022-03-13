@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), #16161a ),url(Pictures/yoongi.jpg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.row{
+    display: inline;
+    margin-top: 50px;
+    padding-left: 40px;
+}
+.col{
+   flex-basis: 50%;
+    padding-left: 50px;
+    margin: 50px 50px 200px 200px;
+}
+html{
+    background-color: #16161a ;
+}
+h1{
+   color: #fffffe ;
+   font-size: 60px;
+}
+h2{
+   color: #fffffe;
+   font-size: 50px;
+}
+h3{
+     color: #fffffe;
+    font-size: 25px;
+}
+h4{
+    color: #fffffe;
+    font-size: 17px
+}
+a:link {
+  color: #3a1aef;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color:#72757e;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #fffffe;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: #b7b7b7;
+  background-color: transparent;
+  text-decoration: underline;
+}
+p{
+    color: #72757e;
+    font-size: 17px;
+}
+.suga {
+  display: block;
+  position: absolute;
+  margin-left: 750px;
+  margin-right: 50px;
+  width: 35%;
+  top: 170px;
+  border-radius: 3px;
+}
+.sugaagif{
+  display: block;
+  position: absolute;
+    margin-left: 770px;
+    margin-right: 50px;
+  width: 35%;
+  top: 1500px;
+  border-radius: 3px;
+}
+.yggif{
+    display: block;
+    position: absolute;
+    margin-left: 70px;
+    margin-right: 760px;
+    width: 38%;
+    top: 2050px;
+    border-radius: 3px;
+}
+.myg{
+    margin-left: 600px;
+    margin-right: 50px;
+}
+.ad {
+  display: block;
+  position: absolute;
+  margin-left: 950px;
+  margin-right: 50px;
+  max-width: 50%;
+   max-height: 50%;
+  top: 800px;
+    transition: transform 0.5s;
+}
+.ad:hover{
+    transform: translateY(-10px);
+}
+.d2 {
+  display: block;
+  position: absolute;
+  margin-left: 950px ;
+  margin-right: 50px;
+   max-width: 20%;
+   max-height: 20%;
+  top: 1070px;
+ transition: transform 0.5s;
+}
+.d2:hover{
+    transform: translateY(-10px);
+}
+
+                   
+
+

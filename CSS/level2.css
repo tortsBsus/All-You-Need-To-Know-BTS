@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+body
+{
+    overflow-x: hidden;
+    margin:0;
+    color: white;
+    font-family: "Montserrat";
+}
+.screen
+{
+    margin:0;
+    align-content: space-around;
+    width: auto;
+    height: 95vh;  
+    flex-wrap: wrap;
+
+    background-color: #130f40;
+    background-image: linear-gradient(315deg, #111111ea 0%, #111111e7 74%);
+    
+}
+
+.first
+{
+    background-image: linear-gradient(to top, rgba(11, 5, 19, 0.401), rgba(7, 8, 19, 0.728)),url("Pictures/level2.jfif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.titles
+{
+    
+    font-family: "Montserrat";
+    font-size: 4vh;
+    color:white;
+    text-align: center;
+    padding: 3% 10% 10% 10%;
+    margin: 0px;
+    
+    
+}
+
+#ess{  font-size: xx-large; }
+
+.ot7
+{
+    display:flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+    padding:10%; 
+     
+    
+}
+
+.members
+{
+    display: flex;
+    flex:1;
+    box-sizing: content-box;
+    background-size:cover;
+    background-repeat: no-repeat;    
+    box-shadow: 5px 5px 5px rgba(255, 238, 238, 0.19);
+    min-width: 21%;
+    min-height:30%;
+    margin:1%;
+    border-radius: 2px;  
+    transition:1s;
+    color:rgba(240, 248, 255, 0);
+    text-align: center;
+    vertical-align:center;
+    font-size: x-large;   
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+.members:nth-of-type(1)
+{   display: flex;
+    flex-flow: column wrap;
+    color: thistle;
+    box-shadow:none;
+    font-family: "work sans";
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+.members:nth-of-type(2)
+{
+    
+    background-image:url("Pictures/L2Joon.jpg");
+      
+   
+}
+div.members:nth-of-type(2):hover
+{
+    color:white;   
+    background-image:linear-gradient(to bottom, rgba(32, 12, 62, 0.295), rgba(6, 20, 22, 0.849)),url("Pictures/L2Joon.jpg");
+    transform: translate(4px,4px);   
+   
+}
+.members:nth-of-type(3)
+{
+    background-image:url("Pictures/L2Jin.jpg");
+    
+   
+}
+div.members:nth-of-type(3):hover
+{
+    color:white;
+    background-image:linear-gradient(to bottom, rgba(32, 12, 62, 0.295), rgba(6, 20, 22, 0.849)),url("Pictures/L2Jin.jpg");
+    transform: translate(4px,4px);   
+   
+}
+.members:nth-of-type(4)
+{
+    background-image:url("Pictures/L2YG.jpg");
+    
+   
+}
+div.members:nth-of-type(4):hover
+{
+    color:white;
+    background-image:linear-gradient(to bottom, rgba(32, 12, 62, 0.295), rgba(6, 20, 22, 0.849)),url("Pictures/L2YG.jpg");
+    transform: translate(4px,4px);   
+   
+}
+.members:nth-of-type(5)
+{
+    background-image:url("Pictures/L2H.jpg");
+    
+   
+}
+div.members:nth-of-type(5):hover
+{
+    color:white;
+    background-image:linear-gradient(to bottom, rgba(32, 12, 62, 0.295), rgba(6, 20, 22, 0.849)),url("Pictures/L2H.jpg");   
+    transform: translate(4px,4px);
+   
+}
+.members:nth-of-type(6)
+{
+    background-image:url("Pictures/L2JM.jpg");
+    
+   
+}
+div.members:nth-of-type(6):hover
+{
+    color:white;
+    background-image:linear-gradient(to bottom, rgba(32, 12, 62, 0.295), rgba(6, 20, 22, 0.849)),url("Pictures/L2JM.jpg");   
+    transform: translate(4px,4px);
+}
+.members:nth-of-type(7)
+{
+    background-image:url("Pictures/l2TH.jpg");
+    
+   
+}
+div.members:nth-of-type(7):hover
+{
+    color:white;
+    background-image:linear-gradient(to bottom, rgba(32, 12, 62, 0.295), rgba(6, 20, 22, 0.849)),url("Pictures/l2TH.jpg"); 
+    transform: translate(4px,4px);  
+   
+}
+.members:nth-of-type(8)
+{
+    background-image:url("Pictures/L2JK.jpg");
+    
+   
+}
+div.members:nth-of-type(8):hover
+{
+    color:white;
+    background-image:linear-gradient(to bottom, rgba(32, 12, 62, 0.295), rgba(6, 20, 22, 0.849)),url("Pictures/L2JK.jpg");
+    transform: translate(4px,4px);   
+   
+}
+
+
+
+
+.socials
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-items:center ;
+    
+    align-content:center;
+    justify-items: center;
+    justify-content: center;  
+   
+}
+.card
+{
+    display: flex;
+    flex-flow: column wrap;
+    
+  
+    width: 30vw;
+    height:26vh;    
+    padding:0;
+    margin: 0.5%;
+
+    
+    align-items:center;
+    align-content: space-around;
+    justify-content: center;
+    flex-flow: column wrap;
+   
+
+    perspective: 1000px; 
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+
+  
+
+}
+.card:hover
+{
+    transform: scale(1.1);
+}
+
+div.card:nth-of-type(5)
+{
+  transform: scale(1);
+  background-color: none;
+  background-image: none;  
+}
+div.card:nth-of-type(1)
+{
+    background-color: #63a4ff;
+    background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+}div.card:nth-of-type(2)
+{
+    background-color :#7cffcb;
+    background-image :linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);
+}div.card:nth-of-type(3)
+{
+    background-color: #6a93cb;
+    background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+}div.card:nth-of-type(4)
+{
+    background-color: #990000;
+    background-image: linear-gradient(147deg, #990000 0%, #ff0000 74%);
+}div.card:nth-of-type(6)
+{
+    background-color: #c7e9fb;
+    background-image: linear-gradient(315deg, #c7e9fb 0%, #e61d8c 74%);
+    
+}div.card:nth-of-type(7)
+{
+    background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+    
+}
+div.card:nth-of-type(8)
+{
+    background-color: #9921e8;
+    background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
+}div.card:nth-of-type(9)
+{
+    background-color: #3bb78f;
+    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+}
+.shows
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+    justify-content: space-around;
+    padding: 1%;
+    overflow: auto;
+    position: static;
+    
+}
+.Heading
+{
+    display: flex;
+    flex: 1;
+    min-width: 30vw;
+    min-height: 30vh;
+    color: white;
+    
+    margin: 0.5%;
+    align-content: center;
+    justify-content: center;
+   
+
+}
+#texts
+{   position: sticky;
+    top:100px;
+    align-self: baseline;
+    font-size: 5vh;
+}
+.tileboard
+{
+    display: flex;
+    flex-flow: column;
+    flex: 2;
+    color: white;
+    
+    margin:0.5%;   
+    position: static;
+    
+    
+}
+
+.tile
+{
+    display: flex;   
+    flex-flow: row wrap;
+    box-sizing: content-box;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    margin: 0.5%;
+    padding: 2%;
+    width:inherit;
+    min-height:50vh;
+    
+    
+    transition: 1s;
+    transform: scale();
+    background-color: #29539b;
+    background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+    
+    text-align: center;
+}
+i
+{
+    font-size: 2vh;
+}
+.gifss
+{
+    flex: 1;
+   padding: 5.5%;
+    width:30%;
+    float: right;
+   
+}
+
+B
+{
+    
+    font-size: 4vh;
+}
+.ice
+{
+    flex:2;
+    align-content: space-around;
+    font-size: large;
+}

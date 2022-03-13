@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), #0f0e17),url(Pictures/jungkook.jpg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.row{
+    display: inline;
+    margin-top: 50px;
+    padding-left: 40px;
+}
+.col{
+   flex-basis: 50%;
+    padding-left: 50px;
+    margin: 50px 50px 200px 200px;
+}
+html{
+    background-color: #0f0e17;
+}
+h1{
+   color:#fffffe ;
+   font-size: 60px;
+}
+h2{
+   color:#fffffe ;
+   font-size: 50px;
+}
+h3{
+     color: #fffffe;
+    font-size: 25px;
+}
+h4{
+    color: #fffffe;
+    font-size: 17px
+}
+a:link {
+  color: #fffffe ;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #E8EAF6 ;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #fffffe;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: #232946 ;
+  background-color: transparent;
+  text-decoration: underline;
+}
+p{
+    color: #b8c1ec;
+    font-size: 17px;
+}
+.jk {
+  display: block;
+  position: absolute;
+  margin-left: 750px;
+  margin-right: 50px;
+  width: 35%;
+  top: 170px;
+  border-radius: 3px;
+}
+.jkgif{
+  display: block;
+  position: absolute;
+    margin-left: 750px;
+    margin-right: 60px;
+  width: 38%;
+  top: 1320px;
+  border-radius: 3px;
+}
+.jungkookgif{
+    display: block;
+    position: absolute;
+    margin-left: 50px;
+    margin-right: 760px;
+    width: 42%;
+    top: 1890px;
+    border-radius: 3px;
+}
+.jjk{
+    margin-left: 580px;
+    margin-right: 50px;
+}
+.stillwithyou {
+  display: block;
+  position: absolute;
+  margin-left: 900px;
+  margin-right: 100px;
+  max-width: 50%;
+   max-height: 50%;
+  top: 960px;
+    transition: transform 0.5s;
+}
+.stillwithyou:hover{
+    transform: translateY(-10px);
+}
+
+
+        

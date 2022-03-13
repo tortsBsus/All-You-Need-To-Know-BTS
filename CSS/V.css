@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), #3E2723),url(Pictures/taehyung.jpg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.row{
+    display: inline;
+    margin-top: 50px;
+    padding-left: 40px;
+}
+.col{
+   flex-basis: 50%;
+    padding-left: 50px;
+    margin: 50px 50px 200px 200px;
+}
+html{
+    background-color: #3E2723;
+}
+h1{
+   color: #fffffe;
+   font-size: 60px;
+}
+h2{
+   color: #fffffe;
+   font-size: 50px;
+}
+h3{
+     color: #fffffe;
+    font-size: 25px;
+}
+h4{
+    color: #fffffe;
+    font-size: 17px
+}
+a:link {
+  color: #FAFAFA;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color:#EEEEEE;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color:#fff3ec ;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: #fffffe;
+  background-color: transparent;
+  text-decoration: underline;
+}
+p{
+    color: #fff3ec;
+    font-size: 17px;
+}
+.tae {
+  display: block;
+  position: absolute;
+  margin-left: 750px;
+  margin-right: 50px;
+  width: 35%;
+  top: 170px;
+  border-radius: 3px;
+}
+.bst{
+  display: block;
+  position: absolute;
+  margin-left: 40px;
+  margin-right: 850px;
+  width: 42%;
+  top: 1380px;
+  border-radius: 3px;
+}
+.ctgif{
+    display: block;
+    position: absolute;
+    margin-left: 650px;
+    margin-right: 50px;
+    width: 40%;
+    top: 1810px;
+    border-radius: 3px;
+}
+.taegif{
+    margin-left: 650px;
+    margin-right: 50px;
+}
+.fouroclock {
+  display: block;
+  position: absolute;
+  margin-left: 700px;
+  margin-right: 50px;
+  width: 20%;
+  top: 740px;
+  border-radius: 3px;
+    transition: transform 0.5s;
+}
+.fouroclock:hover{
+    transform: translateY(-10px);
+}
+.scenery {
+  display: block;
+  position: absolute;
+  margin-left: 950px;
+  margin-right: 50px;
+  width: 20%;
+  top: 740px;
+  border-radius: 3px;
+    transition: transform 0.5s;
+}
+.scenery:hover{
+    transform: translateY(-10px);
+}
+.winterbear {
+  display: block;
+  position: absolute;
+  margin-left: 700px;
+  margin-right: auto ;
+  width: 20%;
+  top: 1010px;
+  border-radius: 3px;
+    transition: transform 0.5s;
+}
+.winterbear:hover{
+    transform: translateY(-10px);
+}
+.snowflower {
+  display: block;
+  position: absolute;
+  margin-left: 950px ;
+  margin-right: 50px;
+  width: 20%;
+  top: 1010px;
+  border-radius: 3px;
+    transition: transform 0.5s;
+}
+.snowflower:hover{
+    transform: translateY(-10px);
+}
+
+                 

@@ -1,0 +1,28 @@
+#navbutton
+{  
+    position: sticky;
+      top: 0;
+      right: 0;
+    
+    z-index: 100;
+    background-color: black; 
+    outline: solid white;
+    outline-offset: -10px;
+    outline-width: 1px;
+    padding: 15px 32px;
+    color: white;    
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Marcellus SC';   
+    opacity:0.9; 
+    user-select: none;
+    overflow:initial;
+  }
+ul
+{
+    font-size: medium;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+
+}

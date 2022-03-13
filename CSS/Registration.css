@@ -1,0 +1,96 @@
+.wrapper,html,body
+{
+    box-sizing:content-box;
+    height:100%;
+    width:100%;  
+    scroll-behavior: smooth; 
+    background-color: #a4508b;
+background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+
+}
+
+.wrapper
+{
+    display:flex;
+    box-shadow: 5px 10px 8px #888888;
+    
+}
+
+.image
+{   
+    
+    display:flex;
+    flex-flow: row wrap;
+    padding:0;
+    border: 1px ;
+    margin:5% 0 5% 5%;
+    flex-grow:2;
+    background-image: linear-gradient(to bottom, rgba(26, 3, 8, 0.63), rgba(3, 29, 10, 0.644)),url("Pictures/Registration.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+    user-select: none;
+}
+
+B
+{
+    padding:0 0 0 13%;
+    margin:5% 0 5% 5%;
+    font-family: "Montserrat";
+    font-size: 250%;
+    color:aliceblue;
+    text-align: center;
+    
+    line-height: 150%;
+  
+}
+
+.forms
+{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding:5% 0 5% 5%;
+    border:0;
+    margin:5% 5% 5% 0;
+    flex-grow: 1;
+    background-color:rgba(255, 255, 255, 0.575);
+    opacity: 0.5;
+    color: ivory;
+    user-select: none;
+    font-family:'Trebuchet MS';
+     
+    
+}
+
+tr
+{
+    flex-flow: row wrap;
+    font-size: x-large;
+    line-height: 150%;
+
+}
+
+input[type=text],input[type=email], input[type=password] 
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+
+input[type=submit], input[type=reset] 
+{
+    background-color: purple;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border:unset;
+    border-radius: 10%;    
+    
+}
+
+
